@@ -101,7 +101,8 @@ middleware:
   connPoolMinIdleTime: 600000
   connRetryTimes: 2
   connRetryInterval: 50
-  rolesToMatch: [user, domainuser, domainadmin,_member_]
+  defaultAuthorizedRoles: [user, domainuser, domainadmin,_member_]
+  agentAuthorizedRoles: [monasca-agent]
   adminAuthMethod: <%= @creds['middleware']['adminAuthMethod'] %>
   adminUser: <%= @creds['middleware']['adminUser'] %>
   adminPassword: <%= @creds['middleware']['adminPassword'] %>
